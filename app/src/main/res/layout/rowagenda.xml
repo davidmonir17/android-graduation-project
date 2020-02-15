@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp">
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/carid"
+            android:layout_width="411dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/names"
+                android:layout_width="296dp"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/ic_action_ba"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="1dp"
+                android:textStyle="bold|italic"
+                android:textSize="15dp"
+                android:text="sdsdsdsdsds"
+                app:layout_constraintBottom_toTopOf="@+id/des"
+                app:layout_constraintEnd_toEndOf="@+id/des"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/topid"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="TextView"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/des"
+                app:layout_constraintEnd_toEndOf="@+id/des"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="369dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@drawable/ic_action_poi"
+                android:text="dsdsdsdssd"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/names" />
+
+            <ImageButton
+                android:id="@+id/votebutton"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="52dp"
+                android:background="@drawable/mixbut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_action_con" />
+
+
+        </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

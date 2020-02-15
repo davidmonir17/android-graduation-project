@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/topicCard"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/topicName"
+            android:layout_width="185dp"
+            android:layout_height="57dp"
+            android:hint="Topic Name"
+            android:layout_marginTop="10dp" />
+        <EditText
+            android:id="@+id/topicDescription"
+            android:layout_width="185dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/topicName"
+            tools:ignore="UnknownId"
+            android:hint="Topic Description" />
+
+        <EditText
+            android:id="@+id/topicTime"
+            android:layout_width="185dp"
+            android:layout_height="57dp"
+            android:hint="Topic Time"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/topicName"/>
+        <Spinner
+            android:id="@+id/topicPriority"
+            android:spinnerMode="dropdown"
+            android:layout_width="185dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/topicTime"
+            tools:ignore="UnknownId"
+            android:hint="Topic Priority"
+            android:layout_below="@+id/topicName"/>
+        <EditText
+            android:id="@+id/hidden"
+            android:layout_width="185dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/topicTime"
+            tools:ignore="UnknownId"
+            android:hint="Topic Priority"
+            android:layout_below="@+id/topicName"
+            android:visibility="invisible"/>
+        <EditText
+            android:id="@+id/priorityValue"
+            android:layout_width="185dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/topicTime"
+            tools:ignore="UnknownId"
+            android:hint="Topic Priority"
+            android:layout_below="@+id/topicName"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/deleteTopic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/topicPriority"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/delete_topic_icon" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
